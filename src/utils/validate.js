@@ -5,7 +5,9 @@
  * @returns {Boolean}
  */
 export function isPathMatch(pattern, path) {
-  const regexPattern = pattern.replace(/\//g, '\\/').replace(/\*\*/g, '.*').replace(/\*/g, '[^\\/]*')
+  let regexPattern = pattern.replace(/\//g, '\\/').replace(/\*\*/g, '.*').replace(/\*/g, '[^\\/]*')
+  // 支持路径参数，如 /test/:id
+  regexPattern = regexPattern.replace(/:\w+/g, '[^\\/]*')
   const regex = new RegExp(`^${regexPattern}$`)
   return regex.test(path)
 }

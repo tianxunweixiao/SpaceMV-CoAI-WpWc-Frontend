@@ -84,6 +84,28 @@ export default defineConfig(({ mode, command }) => {
           })
         ]
       }
+    },
+    // Vitest 配置
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      include: ['**/*.test.{js,ts,vue}'],
+      exclude: ['node_modules', 'dist', 'build'],
+      setupFiles: ['./tests/setup.js'],
+      coverage: {
+        reporter: ['text', 'json', 'html'],
+        include: ['src/**/*.{js,ts,vue}'],
+        exclude: ['node_modules', 'dist', 'build', 'src/main.js', 'src/App.vue'],
+        thresholds: {
+          lines: 80,
+          functions: 80,
+          branches: 80,
+          statements: 80
+        }
+      },
+      deps: {
+        inline: ['element-plus']
+      }
     }
   }
 })
