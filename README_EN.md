@@ -25,6 +25,7 @@
 * [Contribution Guide](#contribution-guide)
 * [License](#license)
 * [Contact](#contact)
+* [Contributors](#contributors)
 * [To-Do List](#to-do-list)
 
 ## Core Modules
@@ -308,11 +309,17 @@ For any questions, suggestions or business cooperation needs, please contact the
 
 * **Email**: code@spacemv.com  
 * **Issues**: [GitHub Issues](https://github.com/tianxunweixiao/SpaceMV-CoAI-WpWc-Frontend/issues)
+* **Discussions**: [GitHub Discussions](https://github.com/tianxunweixiao/SpaceMV-CoAI-WpWc-Frontend/discussions)
 
 For more information, you can follow the company's WeChat official account:
 
 <img width="106" height="106" alt="image" src="https://github.com/user-attachments/assets/69a02ad0-422c-422a-bf5f-9b7890cf31ab" />
 
+## Contributors
+
+<div>
+  <img src="./public/github.png" style="cursor: pointer;" width="50" height="50" alt="spacemvwnn" title="spacemvwnn" />
+</div>
 
 ## To-Do List
 
